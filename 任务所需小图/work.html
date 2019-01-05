@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web开发二大作业</title>
+	<script type="text/javascript" src="am.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#big{
+			width: 100%;
+			height: 130px;
+			background-color: #ffffff;
+			z-index: 1000;
+		}
+		#small{
+			width: 1180px;
+			margin: 0 auto;
+			height: 86px;
+			background-color: #ffffff;
+		}
+		#big6{
+			width: 100%;
+			height: 42px;
+		}
+		#small6{
+			width: 1180px;
+			margin: 0 auto;
+			height: 42px;
+		}
+		#suspension{
+			width: 1180px;
+			height: 130px;
+		}
+
+		#entry{
+			width: 1180px;
+			height: 44px;
+		}
+		#buy{
+			width: 170px;
+			height: 44px;
+			float: left;
+			color: #9a9791;
+			font-size: 14px;
+			line-height: 30px;
+		}
+		#list{
+			width: 742px;
+			height: 44px;
+			float: left;
+			margin-left: 260px;
+			display: block;
+			line-height: 26px;
+		}
+		.qq{
+			width: 18px;
+			height: 19px;
+			margin-left: 14px;
+			float: left;
+			padding-top: 10px;
+		}
+		.lo1{
+			width: 28px;
+			height: 19px;
+			margin-left: 14px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;	
+			text-decoration: none;
+		}
+		a{
+			color: inherit;
+		}
+		#big a:hover{
+			color: #ff4d04;
+		}
+		#big2 a:hover{
+			color: #ff4d04;
+		}
+		.loo1{
+			width: 28px;
+			height: 19px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.loo2{
+			width: 56px;
+			height: 19px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.lo2{
+			width: 56px;
+			height: 19px;
+			margin-left: 14px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.qq1{
+			width: 8px;
+			height: 19px;
+			margin-left: 14px;
+			float: left;
+			padding-top: 10px;
+		}
+		.loo3{
+			width: 42px;
+			height: 19px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.lo3{
+			width: 42px;
+			height: 19px;
+			margin-left: 14px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.l{
+			width: 5px;
+			height: 19px;
+			margin-left: 5px;
+			float: left;
+			font-size: 14px;
+			padding-top: 6px;
+			color: #fe6c00;
+			text-decoration: none;
+		}
+
+		#search{
+			width: 1180px;
+			height: 64px;
+			float: left;
+
+		}
+		#picture1{
+			width: 170px;
+			height: 64px;
+			float: left;
+		}
+		#search1{
+			width: 580px;
+			height: 35px;
+			float: left;
+			margin-top: 16px;
+			margin-left: 60px;
+			border: 4px solid #fe6c00;
+		}
+		#search2{
+			width: 78px; 
+			height: 35px;  
+			text-align: center; 
+			line-height: 30px; 
+			float: right; 
+			background-color: #fe6c00;
+		}
+		#search3{
+			width: 278px;
+			height: 42px;
+			float: left;
+			margin-left: 80px;
+			margin-top: 16px;
+			border-radius: 2px;
+		}
+		#search4{
+			width: 90px;
+			height: 42px;
+			border: 1px solid #9a9791;
+			float: left;
+			border-radius: 2px;
+		}
+		#search5{
+			width: 90px;
+			height: 43px;
+			background-color: #fe6c00;
+			float: left;
+			border-radius: 2px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.s1{
+			width: 16px;
+			height: 16px;
+			margin-left: 36px;
+			margin-top: 6px;
+			float: left;
+		}
+		.s2{
+			width: 90px;
+			height: 16px;
+			margin-top: 4px;
+			float: left;
+			font-size: 13px;
+			color: #9a9791;
+		}
+
+		#hair{
+			width: 584px;
+			height: 24px;
+			float: left;
+			margin-left: 246px;
+		}
+		.a{
+			position: relative;
+			font-size: 13px;
+			color: #9a9791;
+			text-decoration: none;
+		}
+		.a1{
+			position: relative;
+			font-size: 13px;
+			color: #ff0000;
+			text-decoration: none;
+		}
+		.a2{
+			position: relative;
+			font-size: 13px;
+			color: #aba9dc;
+			text-decoration: none;
+		}
+
+		#classify{
+			width: 1180px;
+			height: 42px;
+			float: left;
+		}
+		#classify1{
+			width: 168px;
+			height: 42px;
+			background-color: #fe6c00;
+			color: #ffffff;
+			font-size: 14px;
+			line-height: 40px;
+			text-align: center;
+			float: left;
+		}
+		#classify2{
+			height: 42px;
+			float: left;
+		}
+		#cla2{
+			position: relative;
+			font-size: 14px;
+			color: #000000;
+			margin-left: 52px;
+			text-decoration: none;
+			line-height: 40px;
+		}
+
+		#big2{
+			width: 100%;
+			height: 892px;
+			background-color: #f8f7f6;
+			float: left;
+		}
+		#small2{
+			width: 1180px;
+			height: 892px;
+			margin: 0 auto;
+		}
+		#lis1{
+			width: 169px;
+			height: 547px;
+			background-color: #ffffff;
+			float: left;
+		}
+		#liss1{
+			width: 25px;
+			height: 422px;
+			float: left;
+			background-color: #000000;
+			font-size: 14px;
+			border-bottom: 1px solid #fe6c00;
+			color: #ff4d4b;
+		}
+		#liss2{
+			width: 144px;
+			height: 422px;
+			float: left;
+			font-size: 13px;
+			border-bottom: 1px solid #fe6c00;
+		}
+		.liss2{
+			width: 144px;
+			height: 14px;
+			float: left;
+			margin-top: 17px;
+		}
+		.ha{
+			font-size: 13px;
+			margin-left: 8px;
+			float: left;
+			color: #000000;
+			text-decoration: none;
+		}
+		#liss3{
+			width: 169px;
+			height: 125px;
+			float: left;
+			font-size: 14px;
+		}
+		#lis2{
+			width: 800px;
+			height: 546px;
+			background-color: #ffffff;
+			float: left;
+			border-right: 1px solid #ff4d04;
+		}
+		#liss4{
+			width: 802px;
+			height: 364px;
+			float: left;
+			border-bottom: 1px solid #ff4d04;
+			position: relative;
+			overflow: hidden;
+		}
+		.slider{
+			width: 6416px;
+			position: absolute;
+			left: -802px;
+		}
+		.slide{
+			width: 802px;
+			overflow: hidden;
+			float: left;
+		}
+		#liss4>span{
+			display: block;
+			width: 30px;
+			height: 50px;
+			text-align: center;
+			cursor: pointer;
+			color: #fff;
+			top: 175px;
+			line-height: 50px;
+			/*background: rgb(255,0,0);*/
+			font-size: 30px;
+			position: absolute;
+			/* display: none; */
+			opacity: 0;
+		}
+		#left{
+			left: 10px;
+		}
+		#right{
+			right: 40px;
+		}
+		.nav{
+			position: absolute;
+			left: 326px;
+			bottom: 20px;
+			list-style-type: none;
+			text-align: center;
+			font-size: 14px;
+		}
+		.nav>li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			cursor: pointer;
+			margin: 0 3px;
+			border-radius: 50%;
+		}
+		.nav .active{
+			background: red;
+		}
+		#liss5{
+			width: 802px;
+			height: 182px;
+			float: left;
+		}
+		.liss5{
+			width: 200px;
+			height: 182px;
+			float: left;
+		}
+		#lis3{
+			width: 209px;
+			height: 547px;
+			float: left;
+			background-color: #ffffff;
+		}
+		#liss6{
+			width: 209px;
+			height: 42px;
+			float: left;
+			font-size: 14px;
+			border-bottom: 1px solid #ebeae7;
+		}
+		#liss7{
+			width: 209px;
+			height: 322px;
+			float: left;
+			font-size: 14px;
+			border-bottom: 1px solid #ebeae7;
+			overflow: hidden;
+			position: relative;
+		}
+		#liss8{
+			width: 209px;
+			height: 183px;
+			float: left;
+			font-size: 14px;
+		}
+		.ul1{
+			margin-top: 24px;
+			text-align: center;
+		}
+		.li1{
+			list-style-type: none;
+			margin-top: 6px;
+		}
+		.ul2{
+			float: left;
+		}
+		.li2{
+			list-style-type: none;
+			margin-top: 14px;
+			margin-left: 6px;
+		}
+		.da{
+			font-size: 14px;
+			text-decoration: none;
+			color: #855d38;
+		}
+		#laba{
+			width: 17px;
+			height: 17px;
+			margin-left: 22px;
+			margin-top: 14px;
+			float: left;
+		}
+		#zi{
+			width: 56px;
+			height: 17px;
+			margin-top: 14px;
+			margin-left: 16px;
+			float: left;
+			font-size: 14px;
+			color: #ff4d04;
+		}
+		#jiantou{
+			width: 13px;
+			height: 17px;
+			margin-top: 14px;
+			margin-left: 76px;
+			float: left;
+		}
+		#caidan1{
+			width: 178px;
+			height: 26px;
+			margin-left: 12px;
+			margin-top: 4px;
+			font-size: 14px;
+			color: #000000;
+			float: left;
+		}
+		#caidan2{
+			width: 178px;
+			height: 23px;
+			margin-left: 12px;
+			margin-top: 4px;
+			font-size: 13px;
+			color: #000000;
+			float: left;
+		}
+		#kefu{
+			width: 1180px;
+			height: 182px;
+			float: left;
+		}
+		#kefu1{
+			width: 149px;
+			height: 182px;
+			float: left;
+		}
+		#kefu2{
+			width: 860px;
+			height: 182px;
+			float: left;
+			border-bottom: 1px solid #ebeae7;
+		}
+		#kefuu{
+			margin-top: 20px;
+			margin-left: 62px;
+			float: left;
+		}
+		#kefuu1{
+			margin-top: 8px;
+			font-size: 14px;
+			color: #666560;
+			list-style-type: none;
+		}
+		#kefu3{
+			width: 171px;
+			height: 182px;
+			padding-top: 28px;
+			float: left;
+		}
+		#dier{
+			width: 1180px;
+			height: 108px;
+			float: left;
+		}
+		#di{
+			width: 1180px;
+			height: 56px;
+			float: left;
+			text-align: center;
+		}
+		#dier1{
+			width: 1180px;
+			height: 16px;
+			margin-top: 11px;
+			text-align: center;
+			float: left;
+			font-size: 12px;
+			color: #9a9791;
+		}
+		.dier1{
+			margin-left: 10px;
+			color: #666560;
+			text-decoration: none;
+		}
+		#gonggao{
+			margin-left: 10px;
+			float: left;
+			font-size: 13px;
+			color: #ff4d04;
+			text-decoration: none;
+			position: absolute;
+			top: -29px;
+		}
+		#ul2{
+			margin-left: 10px;
+			float: left;
+			font-size: 13px;
+			color: #ff4d04;
+			text-decoration: none;
+		}
+		#gonggao1{
+			list-style-type: none;
+			margin-top: 11px;
+			text-decoration: none;
+		}
+
+		#huadong1{
+			top:74px;
+			right:-84px;
+			position: fixed;
+			overflow:hidden;
+		}
+		#huadong2{
+			top:134px;
+			right:-78px;
+			position: fixed;
+			overflow:hidden;
+		}
+		#huadong3{
+			top:184px;
+			right:-15px;
+			position: fixed;
+			overflow:hidden;
+		}
+		#huadong4{
+			position:fixed;
+			top:184px;
+			right:-60px;
+			height:140px;
+			width:63px;
+			background-color: #fd9a6e;
+		}
+		#huadong5{
+			top:327px;
+			right:-78px;
+			position: fixed;
+			overflow:hidden;
+		}
+		#huadong6{
+			height:100px;
+			width:123px;
+			top:377px;
+			right:-78px;
+			position:fixed;
+			overflow:hidden;
+			background-color:#fd9a6e;
+		}
+		#huadong7{
+			top:479px;
+			right:-78px;
+			position: fixed;
+			overflow:hidden;
+		}
+		#huadong4 a{
+			margin-top:50px;
+			font-size:13px;
+			width:53px;
+			height:15px;
+			float:left;
+			margin-left:10px;
+			text-decoration: none;
+		}
+		#weidenglu{
+			width:40px;
+			height:22px;
+			color:#fff;
+			margin-top:20px;
+			font-size:13px;
+			text-align:center;
+			line-height:22px;
+			margin-left:10px;
+			background-color:#fd9a6e;
+			border:1px solid #fff;
+			border-radius:2px;
+			float:left;
+			cursor:pointer;
+		}
+		#serwei{
+			margin-top:50px;
+			margin-left:12px;
+		}
+		#img{
+			margin-left:12px;
+		}
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div id="small">
+			<div id="suspension">
+				<div id="entry">
+					<div id="buy">
+						帮5买，享帮帮
+					</div>
+					<div id="list">
+						<a class="qq" href="#"><img src="img/qq_03.png"></a>
+						<a class="qq" href="#"><img src="img/weixin_03.png"></a>
+						<a class="qq" href="#"><img src="img/weibo_03.png"></a>
+						<a class="lo1" href="#">登录</a>
+						<a class="lo1" href="#">注册</a>
+						<a class="qq" href="#"><img src="img/xin_03.png"></a>
+						<a class="loo1" href="#">消息</a>
+						<a class="qq" href="#"><img src="img/dingdan_03.png"></a>
+						<a class="loo2" href="#">我的订单</a>
+						<a class="lo2" href="#">我的收藏</a>
+						<a class="lo2" href="#">帮钻兑换</a>
+						<a class="qq1" href="#"><img src="img/shouji_03.png"></a>
+						<a class="loo3" href="#">手机版</a>
+						<a class="lo3" href="#">帮5淘</a>
+						<a class="lo2" href="#">客户服务</a>
+						<a class="qq" href="#"><img src="img/gouwuche.jpg"></a>
+						<a class="loo3" href="#">购物车</a>
+						<a class="l" href="#">0</a>
+					</div>
+				</div>
+
+				<div id="search">
+					<div id="picture1">
+						<img src="img/logo_03.jpg">
+					</div>
+					<div id="search1">
+						<div>
+							<input type="" name="" placeholder="输入商品网址或关键词，直通全网，快速帮5购！" style="width: 498px; height: 31px; color: #9a9791; line-height: 30px; font-size: 14px; float: left;">
+						</div>
+						<div id="search2">
+							<a href="" style="color: #ffffff; font-size: 14px; text-decoration: none; ">搜全网</a>
+						</div>
+					</div>
+					<div id="search3">
+						<div id="search4">
+							<div class="s1"><img src="img/erji_03.png"></div>
+							<div class="s2">400-085-0505</div>
+						</div>
+						<div id="search4">
+							<div class="s1"><img src="img/youjian_03.png"></div>
+							<div class="s2">mc@b5m.com</div>
+						</div>
+						<div id="search5">
+							<a href=""><img src="img/wenhao.jpg"></a>
+							<a href="" style="font-size: 14px; color: #ffffff; text-decoration: none;">常见问题</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="hair">
+					<a href="" class="a1">洗发护发</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a1">日本纸尿裤</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">身体乳</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">内衣文胸</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a2">iPone 6s</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a2">iPad Air2</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">牛仔裤</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">奶粉</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">防晒霜</a>
+					<a href="" class="a">|</a>
+					<a href="" class="a">伞</a>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	<div id="big6">
+		<div id="small6">
+			<div id="classify">
+				<div id="classify1">
+					全部商品分类
+				</div>
+				<div id="classify2">
+					<a href="" id="cla2">帮5赚</a>
+					<a href="" id="cla2">帮韩品</a>
+					<a href="" id="cla2">超划算</a>
+					<a href="" id="cla2">品牌货栈</a>
+					<a href="" id="cla2">韩国馆</a>
+					<a href="" id="cla2">帮社区</a>
+					<a href="" id="cla2">
+						1元兑奖
+					</a>
+					<div style="width: 25px; height: 11px; float: right; margin-right: 19px;">
+						<img src="img/hot.gif">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 100%; height: 1px; background-color: #fe6c00; float: left;"></div>
+	</div>
+
+	<div id="big2">
+		<div id="small2">
+			<div id="lis1">
+				<div id="liss1">
+					<ul class="ul1">
+						<li class="li1">当</li>
+						<li class="li1">前</li>
+						<li class="li1">搜</li>
+						<li class="li1">索</li>
+						<li class="li1">电</li>
+						<li class="li1">商</li>
+					</ul>
+					<ul class="ul1">
+						<li class="li1">全</li>
+						<li class="li1">网</li>
+					</ul>
+				</div>
+				<div id="liss2">
+					<div class="liss2">
+						<a href="" class="ha">手机</a>
+						<a href="" class="ha">数码</a>
+						<a href="" class="ha">影音</a>
+						<a href="" class="ha">配件</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">电脑</a>
+						<a href="" class="ha">网络</a>
+						<a href="" class="ha">办公</a>
+						<a href="" class="ha">打印</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">家电</a>
+						<a href="" class="ha">厨卫</a>
+						<a href="" class="ha">生活</a>
+						<a href="" class="ha">个户</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">园艺</a>
+						<a href="" class="ha">家具</a>
+						<a href="" class="ha">家纺</a>
+						<a href="" class="ha">家饰</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">彩妆</a>
+						<a href="" class="ha">面部</a>
+						<a href="" class="ha">身体</a>
+						<a href="" class="ha">香水</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">男装</a>
+						<a href="" class="ha">女装</a>
+						<a href="" class="ha">内衣</a>
+						<a href="" class="ha">其他</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">女包</a>
+						<a href="" class="ha">男包</a>
+						<a href="" class="ha">女鞋</a>
+						<a href="" class="ha">男鞋</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">运动</a>
+						<a href="" class="ha">户外</a>
+						<a href="" class="ha">装备</a>
+						<a href="" class="ha">服饰</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">儿童</a>
+						<a href="" class="ha">婴儿</a>
+						<a href="" class="ha">食品</a>
+						<a href="" class="ha">玩具</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">乐器</a>
+						<a href="" class="ha">家宠</a>
+						<a href="" class="ha">收藏</a>
+						<a href="" class="ha">鲜花</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">保健</a>
+						<a href="" class="ha">理疗</a>
+						<a href="" class="ha">药品</a>
+						<a href="" class="ha">眼镜</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">果蔬</a>
+						<a href="" class="ha">礼品</a>
+						<a href="" class="ha">粮油</a>
+						<a href="" class="ha">特产</a>
+					</div>
+					<div class="liss2">
+						<a href="" class="ha">文艺</a>
+						<a href="" class="ha">生活</a>
+						<a href="" class="ha">科技</a>
+						<a href="" class="ha">教育</a>
+					</div>
+				</div>
+				<div id="liss3">
+					<ul class="ul2">
+						<li class="li2">
+							<img src="img/dd_03.jpg">
+							<a href="" class="da">什么是帮5购</a>
+						</li>
+						<li class="li2">
+							<img src="img/dd_06.jpg">
+							<a href="" class="da">帮5购提供什么服务</a>
+						</li>
+						<li class="li2">
+							<img src="img/dd_08.jpg">
+							<a href="" class="da">如何提供帮5购服务</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="lis2">
+				<div id="liss4">
+					<div class="slider" id="slider">
+						<div class="slide"><img src="img/bann6.png" alt=""></div>
+						<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+						<div class="slide"><img src="img/bann2.jpeg" alt=""></div>
+						<div class="slide"><img src="img/bann3.jpeg" alt=""></div>
+						<div class="slide"><img src="img/bann4.jpeg" alt=""></div>
+						<div class="slide"><img src="img/bann5.jpeg" alt=""></div>
+						<div class="slide"><img src="img/bann6.png" alt=""></div>
+						<div class="slide"><img src="img/bann1.jpeg" alt=""></div>
+					</div>
+					<span id="left">
+						<img src="img/jiant1_01.png">
+					</span>
+					<span id="right">
+						<img src="img/jiant_02.png">
+					</span>
+					<ul class="nav" id="nav">
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+				<div id="liss5">
+					<a href="" class="liss5">
+						<img src="img/1(1).jpg">
+					</a>
+					<a href="" class="liss5">
+						<img src="img/2.jpg">
+					</a>
+					<a href="" class="liss5">
+						<img src="img/3(1).png">
+					</a>
+					<a href="" class="liss5">
+						<img src="img/qqq.png">
+					</a>
+				</div>
+			</div>
+			<div id="lis3">
+				<div id="liss6">
+					<div id="laba">
+						<img src="img/ico-notice.png">
+					</div>
+					<div id="zi">
+						帮帮快讯
+					</div>
+					<div id="jiantou">
+						<img src="img/jiantou.jpg">
+					</div>
+				</div>
+				<div id="liss7">
+					<ul id="gonggao">
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整13</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整1</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整2</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整3</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整4</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整5</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整6</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整7</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整8</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整9</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整10</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整11</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整12</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整13</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整1</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整2</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整3</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整4</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整5</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整6</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整7</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整8</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整9</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整10</a></li>
+					</ul>
+					<ul id="ul2"></ul>
+				</div>
+				<div id="liss8">
+					<div id="caidan2">
+						<img src="img/phone.png">
+						&nbsp话费充值&nbsp
+						<span style="color: #ff4d04;">(可使用超级帮钻)</span>
+					</div>
+					<div id="caidan1">
+						<input type="" name="" placeholder="请输入手机号" style="width: 125px; height: 26px; border: 1px solid #9a9791; font-size: 14px; ">
+					</div>
+					<div id="caidan2">
+						<form name="form1">
+							<select style="width: 61px; height: 20px; margin-top: 3px; float: left;"  name="depaterment" id="depaterment" onchange="onchanged()" >
+								<option value="¥10">10</option>
+								<option value="¥30" selected="selected">30</option>
+						        <option value="¥50">50</option>
+						        <option value="¥100">100</option>
+							</select>
+							<input type="text" name="txt" value="¥30" id="txt" disabled="disabled" style="color: #ff4d04; width: 80px; height: 20px; float: left; outline: none; border: 0px; margin-left: 6px; margin-top: 4px; background-color: #fff;"/>
+							
+						</form>
+					</div>
+					<div id="caidan1">
+						<input type="submit" name="" value="充值" style="width: 178px; height: 26px; background-color: #ff4d04; color: #ffffff; font-size: 14px; text-align: center; line-height: 20px; border: 0px; cursor:pointer;">
+					</div>
+				</div>
+			</div>
+
+			<div id="kefu">
+				<div id="kefu1">
+					<img src="img/loginB.jpg">
+				</div>
+				<div id="kefu2">
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">购物指南</li>
+						<li id="kefuu1">如何下单</li>
+						<li id="kefuu1">帮5购流程</li>
+						<li id="kefuu1">订单查询</li>
+						<li id="kefuu1">物流配送</li>
+					</ul>
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">支付相关</li>
+						<li id="kefuu1">支付方式</li>
+						<li id="kefuu1">安全设置</li>
+						<li id="kefuu1">账户信息</li>
+					</ul>
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">售后服务</li>
+						<li id="kefuu1">取消订单</li>
+						<li id="kefuu1">申请售后</li>
+						<li id="kefuu1">退货流程</li>
+						<li id="kefuu1">退货相关</li>
+					</ul>
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">VIP服务</li>
+						<li id="kefuu1">vip优惠</li>
+						<li id="kefuu1">如何成为VIP</li>
+						<li id="kefuu1">超级帮钻</li>
+					</ul>
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">帮韩品</li>
+						<li id="kefuu1">韩国正品</li>
+						<li id="kefuu1">闪电发货</li>
+						<li id="kefuu1">帮韩品售后</li>
+					</ul>
+					<ul id="kefuu">
+						<li id="kefuu1" style="color: #000000; font-size: 18px;">更多</li>
+						<li id="kefuu1">手机APP</li>
+						<li id="kefuu1">帮5采APP</li>
+						<li id="kefuu1">帮5淘插件</li>
+						<li id="kefuu1">其他</li>
+					</ul>
+				</div>
+				<div id="kefu3">
+					<img src="img/erweima.jpg">
+				</div>
+			</div>
+
+			<div id="dier">
+				<div id="dier1">
+					<a href="" class="dier1">关于帮5买</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">联系我们</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">合作商家</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">友情链接</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">加入我们</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">移动应用</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">热门</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">广告联盟</a>
+					<a href="" class="dier1">|</a>
+					<a href="" class="dier1">使用条款</a>
+				</div>
+				<div id="dier1">Copyright © 2011-2015 B5M.COM.All right reserved.Powered by B5Msoft Co.Ltd.</div>
+				<div id="dier1">增值电信业务经营许可证：泸B2-20130065号|中华人民共和国互联网药品信息服务资格证书(泸)-非经营性-2013-0034泸卫(中医)网申【2015】10032号泸ICP备11034776号-3|食品流通许可证：</div>
+				<div id="dier1">SP3101151410301755</div>
+			</div>
+			<div id="di">
+				<img src="img/bo1.gif">
+				<img src="img/bo2.png">
+				<img src="img/bo3.gif">
+				<img src="img/bo4.png">
+				<img src="img/bo5.png">
+				<img src="img/bo6.png">
+				<img src="img/bo7.png">
+			</div>
+		</div>
+	</div>
+
+	<div id="huadong1">
+		<img src="img/consult-s.png">
+	</div>
+	<div id="huadong2">
+		<img src="img/xiaobang.png">
+	</div>
+	<div id="huadong3">
+		<img src="img/youhui.png">
+	</div>
+	<div id="huadong4">
+		<a href="#">未登录</a>
+		<input type="button" value="登录" id="weidenglu">
+	</div>
+	<div id="huadong5">
+		<img src="img/app.png">
+	</div>
+	<div id="huadong6">
+		<img src="img/serwei.png" id="serwei">
+	</div>
+	<div id="huadong7">
+		<img src="img/cart.png">
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var cover = document.getElementById('big')[0];
+			window.onscroll = function(){
+				var st = document.documentElement.scrollTop || document.body.scrollTop;
+				if (st>130) {
+					big.style.position = 'fixed';
+				}else{
+					big.style.position = 'static';
+				}
+			}
+		}
+
+		var slider = document.getElementById('slider');
+		var index = 1;
+		function next(){
+			index++;
+			animate(slider,{left:-802*index},function(){
+				if(index == 7){
+					slider.style.left = '-802px';
+					index = 1;
+				}
+			});
+			navChange();
+		}
+		function prev(){
+			index--;
+			navChange();
+			animate(slider,{left:-802*index},function(){
+				if(index == 0){
+					slider.style.left = '-4812px';
+					index = 6;
+				}
+			});
+		}
+		var timer = setInterval(next,3000);
+		var liss4= document.getElementById('liss4');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		liss4.onmouseover = function(){
+			clearInterval(timer);
+			animate(left,{opacity:50});
+			animate(right,{opacity:50});
+		}
+		liss4.onmouseout = function(){
+			animate(left,{opacity:0});
+			animate(right,{opacity:0});
+			timer = setInterval(next,3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		var oNavlist = document.getElementById('nav').children;
+		for(var i = 0; i < oNavlist.length; i++){
+			oNavlist[i].idx = i;
+			oNavlist[i].onclick = function(){
+				index = this.idx + 1;
+				animate(slider,{left:-802 * index});
+				navChange();
+			}
+		}
+		function navChange(){
+			for(var i = 0; i < oNavlist.length; i++){
+				oNavlist[i].className = '';
+			}
+			if(index == 7){
+				oNavlist[0].className = 'active';
+			}
+			else if(index == 0){
+				oNavlist[5].className = 'active';
+			}
+			else{
+				oNavlist[index - 1].className = 'active';
+			}
+		}
+
+        function onchanged(){
+       		var txt=document.form1.txt.value;
+         	document.getElementById('txt').value=document.getElementById('depaterment').value;
+    	}
+
+    	// window.onload = roll(50);
+     //    function roll(t) {
+     //        var gonggao = document.getElementById("gonggao");
+     //        var ul2 = document.getElementById("ul2");
+     //        var liss7 = document.getElementById("liss7");
+     //        ul2.innerHTML = gonggao.innerHTML;
+     //        liss7.scrollTop = 0;
+     //        var timer = setInterval(rollStart, t);
+     //        liss7.onmouseover = function () {
+     //            clearInterval(timer);
+     //        }
+     //        liss7.onmouseout = function () {
+     //            timer = setInterval(rollStart, t);
+     //        }
+     //    }
+     //    function rollStart() {
+     //        if (ul2.offsetTop-gonggao.scrollTop<=0) {
+     //            gonggao.scrollTop-=gonggao.offsetHeight
+     //        } else {
+     //            liss7.scrollTop++;
+     //        }
+     //    }
+     	var liss7 = document.getElementById('liss7');
+		var gonggao = document.getElementById('gonggao');
+		var tag = 1;
+		function gongggao(){
+			tag++;
+			animate(gonggao,{top:-29*tag},function(){
+				if(tag==14){
+					gonggao.style.top='-29px';
+					tag=1;
+				}
+			})
+		}
+		var gonggao1 = setInterval(gongggao,500);
+		liss7.onmouseover=function(){
+			clearInterval(gonggao1);
+		}
+		liss7.onmouseout=function(){
+			gonggao1 = setInterval(gongggao,500);
+		}
+
+		var huadong1=document.getElementById('huadong1');
+		var huadong2=document.getElementById('huadong2');
+		var huadong3=document.getElementById('huadong3');
+		var huadong4=document.getElementById('huadong4');
+		var huadong5=document.getElementById('huadong5');
+		var huadong6=document.getElementById('huadong6');
+		var huadong7=document.getElementById('huadong7');
+		huadong1.onmouseover=function(){
+			huadong1.style.right="-6px";
+			huadong2.style.right="0";
+		}
+		huadong1.onmouseout=function(){
+			huadong1.style.right="-84px";
+			huadong2.style.right="-78px";
+		}
+		huadong2.onmouseover=function(){
+			huadong1.style.right="-6px";
+			huadong2.style.right="0";
+		}
+		huadong2.onmouseout=function(){
+			huadong1.style.right="-84px";
+			huadong2.style.right="-78px";
+		}
+		huadong3.onmouseover=function(){
+			huadong3.style.right="60px";
+			huadong4.style.right="0";
+		}
+		huadong3.onmouseout=function(){
+			huadong3.style.right="-15px";
+			huadong4.style.right="-60px";
+		}
+		huadong4.onmouseover=function(){
+			huadong3.style.right="60px";
+			huadong4.style.right="0";
+		}
+		huadong4.onmouseout=function(){
+			huadong3.style.right="-15px";
+			huadong4.style.right="-60px";
+		}
+		huadong5.onmouseover=function(){
+			var serwei=document.getElementById('serwei');
+			huadong5.style.right="0";
+			huadong6.style.right="0";
+			huadong6.removeChild(serwei);
+			var img=document.createElement("img");
+			img.src="img/erwei.png";
+			img.id="img";
+			huadong6.appendChild(img);
+		}
+		huadong5.onmouseout=function(){
+			var img=document.getElementById('img');
+			huadong5.style.right="-78px";
+			huadong6.style.right="-78px";
+			huadong6.removeChild(img);
+			var serwei=document.createElement("img");
+			serwei.id="serwei";
+			serwei.src="img/serwei.png";
+			huadong6.appendChild(serwei);
+		}
+		huadong6.onmouseover=function(){
+			var serwei=document.getElementById('serwei');
+			huadong5.style.right="0";
+			huadong6.style.right="0";
+			huadong6.removeChild(serwei);
+			var img=document.createElement("img");
+			img.src="img/erwei.png";
+			img.id="img";
+			huadong6.appendChild(img);
+		}
+		huadong6.onmouseout=function(){
+			var img=document.getElementById('img');
+			huadong5.style.right="-78px";
+			huadong6.style.right="-78px";
+			huadong6.removeChild(img);
+			var serwei=document.createElement("img");
+			serwei.id="serwei";
+			serwei.src="img/serwei.png";
+			huadong6.appendChild(serwei);
+		}
+		huadong7.onmouseover=function(){
+			huadong7.style.right="0";
+		}
+		huadong7.onmouseout=function(){
+			huadong7.style.right="-78px";
+		}
+	</script>
+</body>
+</html>
