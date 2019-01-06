@@ -26,7 +26,7 @@ function animate(obj,json,callback){
 			clearInterval(obj.timer);
 			callback&&callback();
 		}
-	},10);
+	},5);
 }
 function getStyle(obj,style){
 	if(getComputedStyle(obj)){

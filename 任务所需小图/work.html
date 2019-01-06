@@ -548,7 +548,7 @@
 			color: #ff4d04;
 			text-decoration: none;
 			position: absolute;
-			top: -29px;
+			top: -28px;
 		}
 		#ul2{
 			margin-left: 10px;
@@ -945,6 +945,7 @@
 						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整8</a></li>
 						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整9</a></li>
 						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整10</a></li>
+						<li id="gonggao1"><a href="" style="text-decoration: none;">[公告]帮购及VIP服务调整11</a></li>
 					</ul>
 					<ul id="ul2"></ul>
 				</div>
@@ -1191,19 +1192,19 @@
 		var tag = 1;
 		function gongggao(){
 			tag++;
-			animate(gonggao,{top:-29*tag},function(){
+			animate(gonggao,{top:-28*tag},function(){
 				if(tag==14){
-					gonggao.style.top='-29px';
+					gonggao.style.top='-28px';
 					tag=1;
 				}
 			})
 		}
-		var gonggao1 = setInterval(gongggao,500);
+		var gonggao1 = setInterval(gongggao,400);
 		liss7.onmouseover=function(){
 			clearInterval(gonggao1);
 		}
 		liss7.onmouseout=function(){
-			gonggao1 = setInterval(gongggao,500);
+			gonggao1 = setInterval(gongggao,400);
 		}
 
 		var huadong1=document.getElementById('huadong1');
